@@ -3,8 +3,8 @@ var eFavorite = function() {
 }
 eFavorite.prototype = {
     defaults: {
-        addText: 'добавить в избранное',
-        removeText: 'удалить из избранного',
+        addText: 'Add to favorites',
+        removeText: 'Remove from favorites',
         elementTotalId: 'favorits_cnt',
         elementClass: 'favorite',
         elementActiveClass: 'active',
