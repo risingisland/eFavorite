@@ -10,13 +10,13 @@
 ---------
 
 ### SNIPPET PARAMETERS
-* **&className** - the name of the handler class. Default value: ```eFavorite```
-* **&lifetime** - время жизни куки. По-умолчанию 2592000 = 30 суток<br>
-* **&elementTotalId** - id элемента, в котором отображается общее количество избранных. По-умолчанию - favorits_cnt<br>
-* **&elementClass** - класс элемента-кнопки для добавления/удаления из избранного. По-умолчанию - favorite. Данный элемент должен иметь атрибут data-id=docid, для добавления документа<br>
-* **&elementActiveClass** - класс активного элемента-кнопки для добавления/удаления из избранного. По-умолчанию - active<br>
-* **&addText** - подсказка при наведении на неактивный элемент. По-умолчанию "добавить в избранное"<br>
-* **&removeText** - подсказка при наведении на активный элемент. По-умолчанию "удалить из избранного"<br>
+* **&className** - The name of the handler class. Default value: ```eFavorite```
+* **&lifetime** - The lifetime of the cookie. Default value: ```2592000``` = 30 days
+* **&elementTotalId** - The ID of the element that displays the total number of favorites. Default value: ```favorits_cnt```
+* **&elementClass** - The class of the button element for Adding/Removing from favorites. Default value: ```favorite```. This element must have the ```data-id="[+id+]"``` or ```data-id="[*id*]"``` attribute, to add a document.
+* **&elementActiveClass** - The class of the active button element to Add/Remove from favorites. Default value: ```active```
+* **&addText** - Tooltip when hovering over an inactive element. Default value: ```Add to wishlist```<br>
+* **&removeText** - tooltip when hovering over the active element. Default value: ```Remove from wishlist```<br>
 <br>
 
 Вызов осуществляется один раз в шапке сайта (на каждый список), расстановка активных элементов и общего количества производится после ajax-запроса.<br>
