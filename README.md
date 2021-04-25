@@ -23,23 +23,23 @@
 1. ```[!eFavorite!]``` - Include in header of the templates you wish to use. This sets the cookie to remember the selection.
 1. Create a landing page to display your list of favorates, and include the following in the body where you want to display the listing:
 	```[!eFavorite? &tpl=`@CODE:<a href="[~[+id+]~]">[+pagetitle+]</a><hr>`!] ```
-1. To display a link that shows the number of selected pages along with a link to the landing page, include the following in the desired location of your template (in this example, the landing page has an ID of 50):
+1. To display a link that shows the number of selected favorates, along with a link to the landing page, include the following in the desired location of your template (in this example, the landing page has an ID of 50):
 	```<a href="[~50~]">Favorites (<span id="favorits_cnt"></span>)</a>```
-1. To display the call that allows you to Add/Remove items from favorites, add the following to your articles template:
-	```<span class="favorite" data-id="[+id+]" ></span> ```
-	or within a page:
+1. To display the call that allows you to Add/Remove items from favorites, add the following to your articles template:<br>
+	```<span class="favorite" data-id="[+id+]" ></span> ```<br>
+	or within a page:<br>
 	```<span class="favorite" data-id="[*id*]" ></span> ```
 
-   1. You will also want to include the icons that, when clicked, will show weather the item is selected or not (this example is assuming you are using FontAwesome, but can be modified to your needs):
-   ```
+   1. You will also want to include the following CSS to display the icons that, when clicked, will show weather the item is selected or not (this example is assuming you are using FontAwesome, but can be modified to your needs):
+	```
 	.favorite::before {
 		font-family: "FontAwesome"; color: red; content: "\f08a";
 	}
 	.favorite.active::before {
 		font-family: "FontAwesome"; color: red; content: "\f004";
 	}
-  ```
-  
+	```
+
 #### Alternative Modifications:
 <br>
 
