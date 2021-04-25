@@ -43,11 +43,12 @@
 
 * A more extensive example for step one:<br>
 ```[!eFavorite? &id=`wishlist` &elementTotalId=`total` &elementClass=`wishlist` &addText=`Add Favorite` &removeText=`Remove Favorite` &lifetime=`2592002`!]```
+
 **Explination:** 
-	```&id=`wishlist` ``` has been added for creating a unique call. Usful when multiple lists are being made.
-	```&addText=`Add Favorite` &removeText=`Remove Favorite` ``` to modify the button hover texts.
-	```&lifetime=`2592002` ``` Cookie life has been extended.
-	```&elementClass=`wishlist` ``` Unique css class has been added.
+	```&id=`wishlist` ``` has been added for creating a unique call. Usful when multiple lists are being made.<br>
+	```&addText=`Add Favorite` &removeText=`Remove Favorite` ``` to modify the button hover texts.<br>
+	```&lifetime=`2592002` ``` Cookie life has been extended.<br>
+	```&elementClass=`wishlist` ``` Unique css class has been added.<br>
 	
 	
 #### Alternative Modifications:
