@@ -19,12 +19,28 @@
 * **&removeText** - tooltip when hovering over the active element. Default value: ```Remove from wishlist```<br>
 <br>
 
-Вызов осуществляется один раз в шапке сайта (на каждый список), расстановка активных элементов и общего количества производится после ajax-запроса.<br>
-Имеет встроенную интеграцию с фильтрацией eFilter - т.е. можно организовать дополнительную фильтрацию избранного по заданным параметрам без дополнительных доработок.<br>
+### Example usage:
+1. ```[!eFavorite!]``` - Include in header of the templates you wish to use. This sets the cookie to remember the selection.
+1. Create a landing page to display your list of favorates, and include the following in the body where you want to display the listing:
+	```[!eFavorite? &tpl=`@CODE:<a href="[~[+id+]~]">[+pagetitle+]</a><hr>`!] ```
+1. To display a link that shows the number of selected pages along with a link to the landing page, include the following in the desired location of your template (in this example, the landing page has an ID of 50):
+	```<a href="[~50~]">Favorites (<span id="favorits_cnt"></span>)</a>```
+1. To display the call that allows you to Add/Remove items from favorites, add the following to your articles template:
+	```<span class="favorite" data-id="[+id+]" ></span> ```
+	or within a page:
+	```<span class="favorite" data-id="[*id*]" ></span> ```
 
-### интеграция с eFilter
-&setDocsForeFilterOnPage - если избранные элементы будут фильтроваться с помощью eFilter, то задать id нужной страницы тут.<br>
-&eFilterCallback=`1` - если eFilter вызывается в режиме ajax, не забудьте указать данный параметр<br>
+   1. You will also want to include the icons that, when clicked, will show weather the item is selected or not (this example is assuming you are using FontAwesome, but can be modified to your needs):
+   ```
+	.favorite::before {
+		font-family: "FontAwesome"; color: red; content: "\f08a";
+	}
+	.favorite.active::before {
+		font-family: "FontAwesome"; color: red; content: "\f004";
+	}
+  ```
+  
+#### Alternative Modifications:
 <br>
 
 ### вызов

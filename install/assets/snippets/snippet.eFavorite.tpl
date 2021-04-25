@@ -13,7 +13,7 @@
 */
  
 /*
-Параметры
+Parameters:
 &className - имя класса обработчика. По-умолчанию eFavorite - подключается класс eFavorite\eFavorite из файла eFavorite.class.php
 &lifetime - время жизни куки. По-умолчанию 2592000 = 30 суток
 &elementTotalId - id элемента, в котором отображается общее количество избранных. По-умолчанию - favorits_cnt
@@ -22,11 +22,11 @@
 &addText - подсказка при наведении на неактивный элемент. По-умолчанию "добавить в избранное"
 &removeText - подсказка при наведении на активный элемент. По-умолчанию "удалить из избранного"
 
-интеграция с eFilter
+Integration with eFilter:
 &setDocsForeFilterOnPage - если избранные элементы будут фильтроваться с помощью eFilter, то задать id нужной страницы тут.
 &eFilterCallback=`1` - если eFilter вызывается в режиме ajax, не забудьте указать данный параметр
 
-вызов
+Call:
 [!eFavorite!] - где-нибудь в хидере
 сниппет установит плейсхолдер [+eFavoriteDocs+], который в дальнейшем можно использовать в выводе [!DocLister? &documents=`[+eFavoriteDocs+]`!]
 [!eFavorite? &setDocsForeFilterOnPage=`5`!]
