@@ -50,7 +50,8 @@
 	```&lifetime=`2592002` ``` Cookie life has been extended.<br>
 	```&elementClass=`wishlist` ``` Unique css class has been added.<br>
 	
-	
+---------
+
 #### Alternative Modifications:<br>
 **File:** ```\assets\snippets\eFavorite\js\eFavorite.js```<br>
 * Display the number zero when nothing has been selected, update line 31:<br>
