@@ -44,12 +44,23 @@
 * A more extensive example for step one:<br>
 ```[!eFavorite? &id=`wishlist` &elementTotalId=`total` &elementClass=`wishlist` &addText=`Add Favorite` &removeText=`Remove Favorite` &lifetime=`2592002`!]```
 
-**Explination:** 
+**Explination:** <br>
 	```&id=`wishlist` ``` has been added for creating a unique call. Usful when multiple lists are being made.<br>
 	```&addText=`Add Favorite` &removeText=`Remove Favorite` ``` to modify the button hover texts.<br>
 	```&lifetime=`2592002` ``` Cookie life has been extended.<br>
 	```&elementClass=`wishlist` ``` Unique css class has been added.<br>
 	
 	
-#### Alternative Modifications:
-<br>
+#### Alternative Modifications:<br>
+**File:** ```\assets\snippets\eFavorite\js\eFavorite.js```<br>
+* Display the number zero when nothing has been selected, update line 31:
+if (total == 0) total = '0';
+
+* Use the ```&addText``` & ```&removeText``` as button selectors and not css, update lines 34 & 36 with the following:
+```
+$("." + self.params.elementClass).html(self.params.addText);
+```
+
+```
+$("." + self.params.elementClass + "[data-id='" + rows[key].id + "']").html(self.params.removeText);
+```
