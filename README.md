@@ -53,10 +53,10 @@
 	
 #### Alternative Modifications:<br>
 **File:** ```\assets\snippets\eFavorite\js\eFavorite.js```<br>
-* Display the number zero when nothing has been selected, update line 31:
+* Display the number zero when nothing has been selected, update line 31:<br>
 ```if (total == 0) total = '0';```
 
-* Use the ```&addText``` & ```&removeText``` as button selectors and not css, update lines 34 & 36 with the following:
+* Use the ```&addText``` & ```&removeText``` as button selectors and not css, update lines 34 & 36 with the following:<br>
 ```
 $("." + self.params.elementClass).html(self.params.addText);
 ```
