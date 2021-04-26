@@ -51,7 +51,9 @@
 <br><br>
 	
 * A more extensive example for step one:<br>
-```[!eFavorite? &id=`wishlist` &elementTotalId=`total` &elementClass=`wishlist` &addText=`Add Favorite` &removeText=`Remove Favorite` &lifetime=`2592002`!]```
+```
+[!eFavorite? &id=`wishlist` &elementTotalId=`total` &elementClass=`wishlist` &addText=`Add Favorite` &removeText=`Remove Favorite` &lifetime=`2592002`!]
+```
 
 **Explination:** <br>
 	```&id=`wishlist` ``` has been added for creating a unique call. Usful when multiple lists are being made.<br>
