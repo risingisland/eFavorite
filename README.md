@@ -33,7 +33,7 @@
 
    1. You will also want to include the following CSS to display the icons that, when clicked, will show weather the item is selected or not (this example is assuming you are using FontAwesome, but can be modified to fit your needs):<br>
 
-**FontAwesome 4.7**
+**FontAwesome 4.7**<br>
 	```
 	.favorite {cursor: pointer;}
 	.favorite:hover {text-decoration: underline;}
@@ -41,13 +41,14 @@
 	.favorite.active::before {font-family: "FontAwesome"; color: red; font-size:16px; content: "\f004";}
 	```
 
-**FontAwesome 5.+**
+**FontAwesome 5.+**<br>
 	```
 	.favorite {cursor: pointer;}
 	.favorite:hover {text-decoration: underline;}
 	.favorite::before {font-family: "Font Awesome 5 Free"; color: dark-grey; font-size:16px; font-weight: 300; content: "\f004";}
 	.favorite.active::before {font-family: "Font Awesome 5 Free"; color: red; font-size:16px; font-weight: 900; content: "\f004";}
 	```
+	<br>
 * A more extensive example for step one:<br>
 ```[!eFavorite? &id=`wishlist` &elementTotalId=`total` &elementClass=`wishlist` &addText=`Add Favorite` &removeText=`Remove Favorite` &lifetime=`2592002`!]```
 
