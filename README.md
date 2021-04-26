@@ -34,10 +34,10 @@
    1. You will also want to include the following CSS to display the icons that, when clicked, will show weather the item is selected or not (this example is assuming you are using FontAwesome, but can be modified to your needs):
 	```
 	.favorite::before {
-		font-family: "FontAwesome"; color: red; content: "\f08a";
+		font-family: "Font Awesome 5 Free"; color: dark-grey; font-weight: 300; content: "\f004";
 	}
 	.favorite.active::before {
-		font-family: "FontAwesome"; color: red; content: "\f004";
+		font-family: "Font Awesome 5 Free"; color: red; font-weight: 900; content: "\f004";
 	}
 	```
 
