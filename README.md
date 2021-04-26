@@ -48,7 +48,8 @@
 	.favorite::before {font-family: "Font Awesome 5 Free"; color: dark-grey; font-size:16px; font-weight: 300; content: "\f004";}
 	.favorite.active::before {font-family: "Font Awesome 5 Free"; color: red; font-size:16px; font-weight: 900; content: "\f004";}
 	```
-	<br>
+<br><br>
+	
 * A more extensive example for step one:<br>
 ```[!eFavorite? &id=`wishlist` &elementTotalId=`total` &elementClass=`wishlist` &addText=`Add Favorite` &removeText=`Remove Favorite` &lifetime=`2592002`!]```
 
