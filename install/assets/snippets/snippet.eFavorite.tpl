@@ -2,7 +2,7 @@
 /**
  * eFavorite
  * 
- * Избранное
+ * Favorites
  *
  * @author      webber (web-ber12@yandex.ru)
  * @category    snippet
