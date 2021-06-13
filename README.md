@@ -17,7 +17,7 @@
 * **&elementClass** - The class of the button element for Adding/Removing from favorites. Default value: ```favorite```. This element must have the ```data-id="[+id+]"``` or ```data-id="[*id*]"``` attribute, to add a document.
 * **&elementActiveClass** - The class of the active button element to Add/Remove from favorites. Default value: ```active```
 * **&addText** - Tooltip when hovering over an inactive element. Default value: ```Add to wishlist```<br>
-* **&removeText** - tooltip when hovering over the active element. Default value: ```Remove from wishlist```<br>
+* **&removeText** - Tooltip when hovering over the active element. Default value: ```Remove from wishlist```<br>
 <br>
 
 ### Example usage:
