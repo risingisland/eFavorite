@@ -28,7 +28,8 @@ eFavorite.prototype = {
             beforeSend:function() {},                   
             success: function(msg) {
                 var total = msg.total ? msg.total : 0;
-                if (total == 0) total = '';
+                //if (total == 0) total = ''; // show nothing when empty
+                if (total == 0) total = '0'; // show number "0" when empty
                 $("#" + self.params.elementTotalId).html(total);
                 var rows = msg.rows;
                 $("." + self.params.elementClass).removeClass(self.params.elementActiveClass).attr("title", self.params.addText);
